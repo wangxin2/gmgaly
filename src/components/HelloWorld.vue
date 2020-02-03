@@ -23,19 +23,16 @@
       </li>
     </ul>
     <div class="chinaecharts">
-        <div id="mapChart" ref="mapChart" ></div>
+      <div id="mapChart" ref="mapChart" class="mapChart" ></div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-
+<script>
 export default {
-  components: {
-  },
-  data () {
-    return {
-    }
+  components: {},
+  data() {
+    return {}
   },
   mounted () {
     this.getNumber()
@@ -78,7 +75,7 @@ export default {
         },
         // 提示框，鼠标移入
         tooltip:{
-            show:true, //鼠标移入是否触发数据
+          show:true, //鼠标移入是否触发数据
             trigger: 'item', //出发方式
             formatter:'{b}-确诊量：{c}'
         },
@@ -146,8 +143,8 @@ export default {
                     {name: '宜昌', value: [111.3,30.7,130]},
                 ],
                 zlevel:99999
-            },
-        ],
+            }
+        ]
       }),
       window.addEventListener('resize', () => {
           // 自动渲染echarts
@@ -155,10 +152,11 @@ export default {
       })
     }
   }
-}
+};
 </script>
 
-<style scoped>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="stylus">
 h3 {
   margin: 40px 0 0;
 }
@@ -224,7 +222,7 @@ a {
     width: 100%;
     height: 500px;
 }
-#mapChart {
+.mapChart {
     width: 100%;
     height: 100%;
 }

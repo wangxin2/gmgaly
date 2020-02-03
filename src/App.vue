@@ -4,7 +4,7 @@
       <img src="./assets/banner.png" alt="">
     </div>
     <div class="mainBox">
-      <div id="nav">
+      <div id="nav" class="nav">
         <router-link class="navBtn li_cur" to="/">疫情地图</router-link>
         <router-link class="navBtn" to="/">发热门诊</router-link>
         <router-link class="navBtn" to="/">个人防护</router-link>
@@ -16,7 +16,7 @@
 </template>
 
 <style>
-html, body { margin: 0 auto; width:100%; height:100%; overflow: hidden; -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}
+html, body { margin: 0 auto; width:100%; height:100%; overflow: auto; -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}
 html{font-size:62.5%;}
 body{ font-size:12px; color: #333; font-size:1.2rem; font-family: "Microsoft yahei"; width:100%; height:100%; background-size: 100% 100%;}
 a, address, b, big, blockquote, body, cite, code, dd, del, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, ul { margin: 0; padding: 0;}
@@ -45,7 +45,7 @@ table { border-collapse: collapse;}
 .mainBox{
   border-radius: 5px 5px 0 0;
 }
-#nav{
+.nav{
   height:30px;
   border-bottom: 3px #efefef solid;
 }
